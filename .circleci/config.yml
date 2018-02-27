@@ -35,5 +35,11 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
         
       # run tests!
-      - run: mvn integration-test
+      - run: mvn package
+  deployment:
+    production:
+      branch: master
+      commands:
+        - eb use Dev-env --profile default
+        - eb deploy --profile default
 
