@@ -36,10 +36,4 @@ jobs:
         
       # run tests!
       - run: mvn package
-  deployment:
-    production:
-      branch: master
-      commands:
-        - eb use Dev-env --profile default
-        - eb deploy --profile default
-
+  
