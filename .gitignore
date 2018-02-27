@@ -1,0 +1,10 @@
+/bin/
+/target/
+.settings
+bundle.js
+bundle.js.map
+dist/
+.externalToolBuilders/
+node_modules/
+.classpath
+.project
